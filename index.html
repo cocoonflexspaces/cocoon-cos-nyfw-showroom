@@ -1,0 +1,1540 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Cocoon × COS — NYFW Showroom venue proposal · September 8–14, 2026</title>
+<meta name="description" content="Four NYC venue directions for the COS NYFW showroom — opening reception + five-day appointment showroom, September 8–14, 2026. Prepared by Cocoon Flex Spaces for Sofia Sarubbi at The Gathery." />
+<style>
+  /* ============================================================
+     COCOON BRAND TOKENS
+     Primary: #F54029 (Brilliance / terracotta) + #F5F2E8 (Natural / cream)
+     Accent:  #275453 (Clarity / deep teal), #000000 (Black)
+     Type:    Helvetica Neue — Bold for titles, Medium for headlines, Regular for body
+     ============================================================ */
+
+  :root {
+    --cream: #F5F2E8;
+    --cream-deep: #ECE7D6;
+    --cream-warm: #EFE9D7;
+    --terracotta: #F54029;
+    --terracotta-soft: #E8593F;
+    --terracotta-deep: #C8331E;
+    --teal: #275453;
+    --teal-soft: #355F5E;
+    --ink: #1A1A1A;
+    --ink-soft: #4A4A4A;
+    --ink-mute: #6B6B6B;
+    --rule: rgba(26,26,26,0.12);
+    --rule-soft: rgba(26,26,26,0.06);
+    --max: 1280px;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-font-smoothing: antialiased; text-rendering: optimizeLegibility; scroll-behavior: smooth; }
+
+  body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 1.55;
+  }
+
+  img { display: block; max-width: 100%; height: auto; }
+  a { color: var(--terracotta); text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* TYPE SCALE */
+  .superhead {
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    font-size: 11px;
+    color: var(--terracotta);
+  }
+  .title {
+    font-weight: 700;
+    font-size: clamp(40px, 7vw, 96px);
+    line-height: 1.0;
+    letter-spacing: -0.025em;
+    margin: 0;
+  }
+  .headline {
+    font-weight: 500;
+    font-size: clamp(24px, 3.2vw, 40px);
+    line-height: 1.2;
+    letter-spacing: -0.012em;
+    margin: 0 0 0.6em;
+  }
+  .lede {
+    font-weight: 400;
+    font-size: clamp(18px, 1.5vw, 22px);
+    line-height: 1.45;
+    color: var(--ink-soft);
+    margin: 0 0 1em;
+  }
+  .body { font-size: 17px; line-height: 1.6; }
+  .caption {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+  }
+  .eyebrow {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 700;
+    color: var(--terracotta);
+    margin-bottom: 12px;
+  }
+
+  /* SECTION FRAME */
+  section {
+    padding: clamp(64px, 10vh, 140px) clamp(24px, 5vw, 80px);
+    max-width: var(--max);
+    margin: 0 auto;
+  }
+  section + section { border-top: 1px solid var(--rule); }
+  section.tight { padding-top: clamp(48px, 6vh, 80px); padding-bottom: clamp(48px, 6vh, 80px); }
+  section.full {
+    max-width: none;
+    padding-left: 0;
+    padding-right: 0;
+  }
+  section.full > .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+
+  .logomark { width: 28px; height: 28px; flex: 0 0 auto; }
+  .wordmark { height: 16px; width: auto; flex: 0 0 auto; }
+
+  /* TOP BAR */
+  .topbar {
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    background: rgba(245, 242, 232, 0.92);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid var(--rule);
+  }
+  .topbar-inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 14px clamp(24px, 5vw, 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 24px;
+  }
+  .topbar-brand { display: flex; align-items: center; gap: 18px; font-size: 13px; }
+  .topbar-brand .cocoon { display: flex; align-items: center; gap: 10px; padding-right: 18px; }
+  .topbar-brand .divider { width: 1px; height: 22px; background: var(--rule); flex: 0 0 auto; }
+  .topbar-brand .partner {
+    font-weight: 600;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink);
+  }
+  .topbar-meta {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-soft);
+    font-weight: 600;
+  }
+  @media (max-width: 700px) {
+    .topbar-meta { display: none; }
+  }
+
+  /* COVER */
+  .cover {
+    position: relative;
+    background: var(--cream);
+    padding: 0;
+    max-width: none;
+    overflow: hidden;
+    border-bottom: 1px solid var(--rule);
+  }
+  .cover-grid {
+    display: grid;
+    grid-template-columns: 1.1fr 1fr;
+    min-height: 640px;
+  }
+  .cover-text {
+    padding: clamp(40px, 6vw, 80px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 32px;
+    background: var(--cream);
+  }
+  .cover-image {
+    position: relative;
+    overflow: hidden;
+    background: var(--ink);
+  }
+  .cover-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .cover-meta {
+    display: grid;
+    gap: 6px;
+    margin-top: 32px;
+    font-size: 13px;
+    line-height: 1.65;
+    color: var(--ink-soft);
+  }
+  .cover-meta strong { color: var(--ink); font-weight: 600; }
+
+  /* TWO-COL */
+  .two-col {
+    display: grid;
+    grid-template-columns: 1fr 1.4fr;
+    gap: clamp(40px, 6vw, 96px);
+    align-items: start;
+  }
+  .two-col.media-first { grid-template-columns: 1.4fr 1fr; }
+  .two-col.balanced { grid-template-columns: 1fr 1fr; }
+
+  /* PHOTO CARDS / FRAMES */
+  .photo {
+    background: var(--cream-deep);
+    overflow: hidden;
+    position: relative;
+  }
+  .photo img {
+    width: 100%;
+    aspect-ratio: 3/2;
+    object-fit: cover;
+    transition: transform 600ms ease;
+  }
+  .photo.tall img { aspect-ratio: 3/4; }
+  .photo.square img { aspect-ratio: 1/1; }
+  .photo.wide img { aspect-ratio: 16/9; }
+
+  .photo-grid { display: grid; gap: 18px; }
+  .photo-grid.two { grid-template-columns: 1fr 1fr; }
+  .photo-grid.three { grid-template-columns: repeat(3, 1fr); }
+  .photo-grid.four { grid-template-columns: repeat(4, 1fr); }
+
+  .photo-grid.editorial {
+    grid-template-columns: 1.6fr 1fr;
+    gap: 18px;
+  }
+  .photo-grid.editorial .photo { height: 100%; }
+  .photo-grid.editorial .photo img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+  .photo-grid.editorial .photo:first-child img { aspect-ratio: 4/5; }
+
+  /* QUAD MOSAIC — 1 featured + 3 stacked */
+  .photo-grid.quad {
+    grid-template-columns: 1.5fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 18px;
+    aspect-ratio: 16/11;
+    max-height: 720px;
+  }
+  .photo-grid.quad > :nth-child(1) { grid-row: 1 / 4; }
+  .photo-grid.quad .photo { height: 100%; min-height: 0; overflow: hidden; }
+  .photo-grid.quad .photo img {
+    width: 100%;
+    height: 100%;
+    aspect-ratio: auto;
+    object-fit: cover;
+  }
+  @media (max-width: 900px) {
+    .photo-grid.quad {
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: auto auto;
+      aspect-ratio: auto;
+      max-height: none;
+    }
+    .photo-grid.quad > :nth-child(1) {
+      grid-row: 1;
+      grid-column: 1 / 3;
+    }
+    .photo-grid.quad .photo img { aspect-ratio: 3/2; }
+  }
+
+  /* Floor-labelled tile */
+  .photo .floor-tag {
+    position: absolute;
+    top: 14px;
+    left: 14px;
+    background: rgba(26,26,26,0.78);
+    color: var(--cream);
+    font-size: 10px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    padding: 6px 10px;
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+  }
+
+  /* OPTION HEADER — venue sections */
+  .option-header {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    gap: 28px;
+    align-items: end;
+    margin-bottom: 28px;
+  }
+  .option-num {
+    font-size: clamp(64px, 8vw, 110px);
+    font-weight: 700;
+    line-height: 0.8;
+    color: var(--terracotta);
+    letter-spacing: -0.04em;
+  }
+  .option-title {
+    font-size: clamp(28px, 3.4vw, 44px);
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin: 0;
+  }
+  .option-tag {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    margin-bottom: 6px;
+  }
+
+  /* PRICING TABLE */
+  .breakdown {
+    background: #FFF;
+    border: 1px solid var(--rule);
+    padding: 0;
+    margin-top: 32px;
+  }
+  .breakdown table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 14px;
+  }
+  .breakdown th, .breakdown td {
+    padding: 14px 24px;
+    text-align: left;
+    vertical-align: top;
+    border-bottom: 1px solid var(--rule-soft);
+  }
+  .breakdown th {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+    font-weight: 700;
+    background: var(--cream-warm);
+  }
+  .breakdown td.amount, .breakdown th.amount { text-align: right; font-variant-numeric: tabular-nums; }
+  .breakdown td.qty { text-align: center; color: var(--ink-soft); width: 60px; font-variant-numeric: tabular-nums; }
+  .breakdown tr.subtotal td {
+    background: var(--cream-warm);
+    font-weight: 700;
+    border-top: 2px solid var(--ink);
+    font-size: 15px;
+  }
+  .breakdown tr.subtle td { color: var(--ink-soft); font-size: 13px; }
+  .breakdown tr.total td {
+    background: var(--terracotta);
+    color: #FFF;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: -0.01em;
+  }
+  .breakdown tr.total td .label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.16em; display: block; opacity: 0.85; font-weight: 700; margin-bottom: 2px; }
+  @media (max-width: 600px) {
+    .breakdown th, .breakdown td { padding: 10px 14px; }
+  }
+
+  /* CALLOUT BAR */
+  .callout {
+    background: var(--terracotta);
+    color: #FFF;
+    padding: clamp(40px, 6vw, 80px);
+    margin: 0;
+    max-width: none;
+  }
+  .callout .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    padding: 0 clamp(24px, 5vw, 80px);
+  }
+  .callout .title { color: #FFF; }
+  .callout .superhead { color: rgba(255,255,255,0.88); }
+  .callout .lede { color: rgba(255,255,255,0.92); }
+
+  /* DIVIDER LABEL */
+  .divider-label {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 24px;
+    align-items: center;
+    margin: 0 0 32px;
+  }
+  .divider-label .text {
+    font-size: 11px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--terracotta);
+  }
+  .divider-label .line {
+    height: 1px;
+    background: var(--rule);
+  }
+
+  /* SIMPLE STAT GRID */
+  .stat-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    margin-top: 32px;
+  }
+  .stat .num {
+    font-size: clamp(36px, 4vw, 56px);
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    line-height: 1;
+    color: var(--terracotta);
+  }
+  .stat .label {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--ink-soft);
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  @media (max-width: 700px) {
+    .stat-grid { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* NOTE BOX */
+  .note {
+    background: #FFF;
+    border-left: 3px solid var(--terracotta);
+    padding: 32px 36px;
+    margin: 32px 0;
+    font-size: 17px;
+    line-height: 1.6;
+  }
+  .note p { margin: 0 0 14px; }
+  .note p:last-child { margin-bottom: 0; }
+  .note .signature {
+    margin-top: 18px;
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    color: var(--terracotta);
+    font-weight: 700;
+  }
+
+  /* PILL CTA */
+  .cta-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 24px;
+    background: var(--ink);
+    color: var(--cream);
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    text-decoration: none;
+    border-radius: 100px;
+    transition: background 200ms ease;
+    white-space: nowrap;
+  }
+  .cta-pill:hover { background: var(--terracotta); text-decoration: none; }
+  .cta-pill.terracotta { background: var(--terracotta); color: #FFF; }
+  .cta-pill.terracotta:hover { background: var(--ink); }
+
+  /* WALKTHROUGH STEPS */
+  .walk {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .walk .step {
+    border-top: 2px solid var(--terracotta);
+    padding-top: 24px;
+  }
+  .walk .step-num {
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    color: var(--terracotta);
+    font-weight: 700;
+    margin-bottom: 10px;
+  }
+  .walk .step h4 {
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 0 8px;
+    letter-spacing: -0.01em;
+  }
+  .walk.aligned .step {
+    display: flex;
+    flex-direction: column;
+  }
+  .walk.aligned .step h4 {
+    line-height: 1.2 !important;
+    min-height: 2.4em;
+    margin: 0 0 14px;
+    display: block;
+  }
+  .walk.aligned .step .step-body {
+    flex: 1 1 auto;
+    margin: 0 0 18px;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  .walk.aligned .step .step-price {
+    font-size: 28px;
+    font-weight: 700;
+    color: var(--terracotta);
+    letter-spacing: -0.02em;
+    margin-top: auto;
+    line-height: 1;
+  }
+  .walk.aligned .step .step-price .sub {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 0.16em;
+    color: var(--ink-mute);
+    margin-top: 8px;
+    font-weight: 600;
+  }
+  .walk .step p {
+    margin: 0;
+    color: var(--ink-soft);
+    font-size: 15px;
+    line-height: 1.55;
+  }
+  .walk.four { grid-template-columns: repeat(4, 1fr); gap: 24px; }
+  @media (max-width: 900px) {
+    .walk.four { grid-template-columns: 1fr 1fr; }
+  }
+
+  /* TEAL CALLOUT */
+  .callout.teal { background: var(--teal); }
+
+  /* FOOTER */
+  footer {
+    padding: 60px clamp(24px, 5vw, 80px);
+    border-top: 1px solid var(--rule);
+    background: var(--cream);
+    color: var(--ink-soft);
+  }
+  footer .inner {
+    max-width: var(--max);
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+  footer .sig { font-weight: 600; color: var(--ink); font-size: 14px; }
+  footer .meta { font-size: 12px; }
+
+  /* RESPONSIVE */
+  @media (max-width: 900px) {
+    .cover-grid { grid-template-columns: 1fr; min-height: auto; }
+    .cover-image { height: 50vh; }
+    .two-col, .two-col.media-first, .two-col.balanced { grid-template-columns: 1fr; gap: 32px; }
+    .photo-grid.three, .photo-grid.four { grid-template-columns: 1fr 1fr; }
+    .walk { grid-template-columns: 1fr; gap: 28px; }
+  }
+  @media (max-width: 600px) {
+    .photo-grid.two, .photo-grid.three, .photo-grid.four { grid-template-columns: 1fr; }
+    section { padding: 56px 20px; }
+    .topbar-inner { padding: 14px 20px; }
+  }
+
+  @media print {
+    .topbar { display: none; }
+    section { page-break-inside: avoid; }
+  }
+
+  /* LIGHTBOX */
+  section[data-lightbox] .photo { cursor: zoom-in; }
+  section[data-lightbox] .photo img { transition: transform 500ms ease, filter 300ms ease; }
+  section[data-lightbox] .photo:hover img { transform: scale(1.03); filter: brightness(1.04); }
+
+  .lightbox {
+    position: fixed;
+    inset: 0;
+    background: rgba(10, 10, 10, 0.94);
+    z-index: 1000;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    padding: clamp(20px, 5vw, 56px);
+    cursor: zoom-out;
+    opacity: 0;
+    transition: opacity 250ms ease;
+  }
+  .lightbox.open { display: flex; opacity: 1; }
+  .lightbox img {
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    object-fit: contain;
+    box-shadow: 0 30px 80px rgba(0, 0, 0, 0.6);
+    transform: scale(0.96);
+    transition: transform 300ms cubic-bezier(.2, .8, .2, 1);
+  }
+  .lightbox.open img { transform: scale(1); }
+  .lightbox-close {
+    position: fixed;
+    top: 22px;
+    right: 26px;
+    width: 44px;
+    height: 44px;
+    border: 0;
+    background: rgba(255, 255, 255, 0.08);
+    color: rgba(255, 255, 255, 0.95);
+    font-size: 28px;
+    line-height: 1;
+    font-weight: 300;
+    cursor: pointer;
+    border-radius: 50%;
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+    transition: background 200ms ease;
+  }
+  .lightbox-close:hover { background: rgba(255, 255, 255, 0.18); }
+  .lightbox-caption {
+    position: fixed;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: rgba(255, 255, 255, 0.72);
+    font-size: 12px;
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
+    font-weight: 600;
+  }
+</style>
+</head>
+<body>
+
+<!-- TOP BAR -->
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="topbar-brand">
+      <span class="cocoon">
+        <img src="img/cocoon/mark-128.png" alt="Cocoon" class="logomark" />
+        <img src="img/cocoon/wordmark-320.png" alt="cocoon" class="wordmark" />
+      </span>
+      <span class="divider" aria-hidden="true"></span>
+      <span class="partner" style="display: inline-flex; align-items: center; gap: 10px; line-height: 1;">
+        <img src="img/cos/cos-wordmark.svg" alt="COS" style="height: 14px; width: auto; display: block;" />
+        <span style="font-size: 11px; color: var(--ink-soft); letter-spacing: 0.16em;">·&nbsp;NYFW Showroom</span>
+      </span>
+    </div>
+    <div class="topbar-meta">By appointment · September 8–14, 2026</div>
+  </div>
+</header>
+
+<!-- COVER -->
+<section class="cover full">
+  <div class="cover-grid">
+    <div class="cover-text">
+      <div>
+        <div class="superhead">NYFW · Showroom + opening reception</div>
+        <h1 class="title" style="margin-top:18px;">COS<br/>at New York.<br/><span style="color:var(--terracotta)">September 8–14<sup style="font-size:0.5em;letter-spacing:0;top:-0.6em;position:relative;">.</sup></span></h1>
+        <p class="lede" style="margin-top:32px; max-width: 480px;">Four exclusive Cocoon venues for the COS NYFW showroom — an opening reception for 120, then five days of by-appointment client moments.</p>
+        <a href="#options" class="cta-pill terracotta" style="margin-top: 28px;">Four venue directions ↓</a>
+      </div>
+      <div class="cover-meta">
+        <div><strong>Event</strong> &nbsp;COS NYFW Seasonal Showroom + Opening Reception</div>
+        <div><strong>City</strong> &nbsp;New York · Manhattan + Brooklyn options</div>
+        <div><strong>Dates</strong> &nbsp;September 8–14, 2026 (7 days)</div>
+        <div><strong>Format</strong> &nbsp;1 prep · 5 live · 1 wrap · 12 hrs/day</div>
+        <div><strong>Reception</strong> &nbsp;Day 1 opening · 120 guests</div>
+        <div><strong>Showroom</strong> &nbsp;5 live days · max 20 concurrent · ~300 total flow</div>
+        <div><strong>Prepared for</strong> &nbsp;Sofia Sarubbi · Senior Producer · The Gathery</div>
+        <div><strong>Prepared by</strong> &nbsp;Andrés Tovar · Cocoon Flex Spaces</div>
+      </div>
+    </div>
+    <div class="cover-image">
+      <img src="https://drive.google.com/thumbnail?id=1frhhOFPhQiip19_fmeSTbZt_sAfFmhuI&sz=w1600" alt="Atmospheric SoHo loft interior — Casa Luz, 45 Howard Street" />
+    </div>
+  </div>
+</section>
+
+<!-- A NOTE FROM COCOON -->
+<section id="how-this-works">
+  <div class="two-col">
+    <div>
+      <div class="superhead">A note from Cocoon</div>
+      <h2 class="headline" style="margin-top:14px;">Sofia — four venue directions, each with the same seven-day window, each scaled to host both the opening reception and the appointment week.</h2>
+    </div>
+    <div>
+      <div class="note body">
+        <p>Sofia — pulling together what we've discussed for the COS NYFW showroom: a single-venue week that anchors the opening reception for 120 on Sept 8 and then runs as a by-appointment client showroom Sept 9–13, with prep Sept 8 and wrap Sept 14. Around <strong>300 guests in total flow</strong> across the live days, <strong>20 at a time</strong> on a typical fittings day.</p>
+        <p>Four Cocoon venues fit the brief and could host the full week. Two SoHo lofts (<strong>Casa Panorama</strong>, <strong>Casa Luz</strong>), one Williamsburg architectural anchor (<strong>Casa Brutal</strong>), and a quieter West SoHo studio building (<strong>Casa Arbus</strong>). All four are exclusively represented by Cocoon — the figures below are the all-in venue totals direct from the property, with substantial discounts already applied for the run. <strong>No commission layer; what you see is what you pay.</strong></p>
+        <p>All four come with the standard Cocoon service set — on-site Studio Manager for the duration of the booking, complimentary site visit + tech scout, and two hours of Cocoon Concierge sourcing (caterer, DJ, bartender, photographer) baked in. We can layer in additional services through the Cocoon network once the venue's locked.</p>
+        <div class="signature">— Andrés Tovar, Cocoon Flex Spaces</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- THE BRIEF -->
+<section class="full" id="brief">
+  <div class="inner">
+    <div class="superhead">The brief</div>
+    <h2 class="title" style="font-size: clamp(36px, 5vw, 64px); max-width: 1100px; margin-top: 18px;">A seven-day NYFW showroom for COS — opening reception for 120, then five days of quiet, appointment-led fittings, VIP interviews, and one-on-one clienteling.</h2>
+  </div>
+  <div class="inner" style="margin-top: 48px;">
+    <div class="stat-grid">
+      <div class="stat">
+        <div class="num">7</div>
+        <div class="label">Days · 1 prep<br/>5 live · 1 wrap</div>
+      </div>
+      <div class="stat">
+        <div class="num">120</div>
+        <div class="label">Opening reception<br/>Day 1 cocktail hour</div>
+      </div>
+      <div class="stat">
+        <div class="num">≤20</div>
+        <div class="label">Concurrent guests<br/>typical fittings day</div>
+      </div>
+      <div class="stat">
+        <div class="num">300</div>
+        <div class="label">Total flow<br/>across 5 live days</div>
+      </div>
+    </div>
+  </div>
+  <div class="inner" style="margin-top: 56px;">
+    <div class="two-col">
+      <div>
+        <div class="caption" style="margin-bottom: 12px;">What the showroom is doing</div>
+        <p class="body">Opening with a 120-person reception on Sept 8 evening — cocktails, a first look at the collection, photographable moments for the COS brand team. Then five days of by-appointment fittings (Sept 9–13), 20 guests max concurrent, with VIP client interviews and celebrity press throughout. The venue needs to hold both modes — a celebratory cocktail hour and a calm clienteling environment — without changing footprint.</p>
+      </div>
+      <div>
+        <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">What the venue needs to deliver</div>
+        <p class="body">~6,000 sq ft of usable footprint, room types that read as architecture not event-rental, daylight for the day-long appointment program, and discreet enough that the reception can pivot to private fittings the next morning. Audio speakers for ambient music. 12 hours of access per day. Freight or passenger elevator to make load-in / out painless. Exclusive use across all seven days.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Included with every proposal -->
+  <div class="inner" style="margin-top: 56px;">
+    <div class="note body" style="background: var(--cream-warm); border-left-color: var(--teal); padding: 28px 36px;">
+      <div class="caption" style="color: var(--teal); margin-bottom: 8px;">Included with every venue figure in this deck</div>
+      <p style="margin: 0;"><strong>On-site Studio Manager</strong> for every booked hour — vendor coordination, on-the-day problem-solving, deliveries, AV/music handling, the standard Cocoon service set you'd expect at any property. <strong>Plus a complimentary 30-minute site visit before booking, a 1-hour tech scout after booking, and 2 hours of Cocoon Concierge sourcing</strong> — caterer, DJ, bartender, photographer, florals — anything the COS team would rather we wrangle than wrangle themselves.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =================== WHY COCOON =================== -->
+<section id="why-cocoon">
+  <div class="two-col">
+    <div>
+      <div class="superhead">Why Cocoon</div>
+      <h2 class="headline" style="margin-top:14px;">A few things worth knowing about working through Cocoon.</h2>
+      <p class="body" style="font-size: 15px; color: var(--ink-soft); max-width: 480px;">We curate venues, negotiate terms, and stay in the building for the run.</p>
+    </div>
+    <div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 24px; font-size: 15px;">
+        <li>
+          <div class="caption" style="color: var(--terracotta); margin-bottom: 6px;">Addresses you can't get elsewhere</div>
+          All four venues in this deck are <strong>exclusive to Cocoon</strong> — they're not bookable through the usual venue platforms, and they don't take cold inquiries. We curate the portfolio for spaces that read as architecture rather than event-rental, and we negotiate the terms direct with the operator. The figures you see are clean, all-in venue totals.
+        </li>
+        <li>
+          <div class="caption" style="color: var(--terracotta); margin-bottom: 6px;">Experience design, built in</div>
+          The thinking that usually comes from a separate production agency is part of working with Cocoon. Ten years of building activations with luxury and lifestyle brands means staging, pacing, and service decisions are folded into the venue conversation, not bolted on after. For a NYFW week, that means a venue we already know how to run a reception in and pivot to fittings the next morning.
+        </li>
+        <li>
+          <div class="caption" style="color: var(--terracotta); margin-bottom: 6px;">An on-site Studio Manager every day</div>
+          A Cocoon Studio Manager is in the building from one hour before guest arrival to one hour after — vendor coordination, AV and music handling, deliveries, problem-solving, bathroom stocking. Plus 2 hours of complimentary Cocoon Concierge sourcing to bring forward caterers, DJs, florists, photographers, or anything else the run needs.
+        </li>
+        <li>
+          <div class="caption" style="color: var(--terracotta); margin-bottom: 6px;">Trusted by brands at this level</div>
+          Cocoon has hosted NYFW showrooms, brand activations, and private client moments for Fendi, Estée Lauder, Hermès, Sotheby's, Eckhaus Latta, and others over the past two years. The venues, the workflow, and the team have already absorbed weeks like the one COS is staging.
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- =================== VENUE OPTIONS CALLOUT =================== -->
+<section class="callout" id="options">
+  <div class="inner">
+    <div class="superhead" style="color: rgba(255,255,255,0.92);">Venue · Four directions</div>
+    <h2 class="title" style="margin-top:18px; max-width: 1100px; font-size: clamp(34px, 5vw, 64px); line-height: 1.05;">
+      <span style="display:block; margin-bottom: 0.45em;">A 7,800 sq ft SoHo creative hub with rooftop.</span>
+      <span style="display:block; margin-bottom: 0.45em;">A brutalist art-gallery anchor in Williamsburg.</span>
+      <span style="display:block; margin-bottom: 0.45em;">A 3,500 sq ft SoHo loft with 15-ft ceilings.</span>
+      <span style="display:block;">A four-studio West SoHo creative floor.</span>
+    </h2>
+    <p class="lede" style="margin-top: 28px; max-width: 820px;">Same seven-day window. Four distinct architectures, each with its own temperament — and each large enough to absorb both the opening reception and the five-day appointment program in a single footprint.</p>
+  </div>
+</section>
+
+<!-- ========================================================
+     VENUE A · CASA PANORAMA — SOHO MULTI-FLOOR + ROOFTOP
+     ======================================================== -->
+<section data-lightbox>
+  <div class="option-header">
+    <div class="option-num">A</div>
+    <div>
+      <div class="option-tag">Venue A · Casa Panorama · SoHo, Manhattan · 7,800 sq ft</div>
+      <h3 class="option-title">A two-floor SoHo creative hub.<br/>Main showroom, upper lounge with bar, rooftop terrace and skyline views.</h3>
+    </div>
+  </div>
+
+  <!-- Hero pair — Floor 1 showroom + rooftop -->
+  <div class="photo-grid editorial" style="margin-top: 32px;">
+    <div class="photo">
+      <img src="https://drive.google.com/thumbnail?id=1UA7i8nE4w-Pt-KeLOgqTt7Yu4K4sqeCl&sz=w1600" alt="Casa Panorama — Floor 1 showroom-layout floor, open-concept with concrete floors, white walls, designer furniture" />
+      <span class="floor-tag">Floor 1 · Showroom</span>
+    </div>
+    <div class="photo">
+      <img src="https://drive.google.com/thumbnail?id=15J_N-QN05LldndORpFGYRiy2ezLJrAOg&sz=w1600" alt="Casa Panorama — rooftop terrace with Manhattan skyline views" />
+      <span class="floor-tag">Rooftop</span>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A 7,800 sq ft space in the heart of SoHo across two floors plus a rooftop terrace, with 1,500 sq ft of exterior. <strong>Floor 1</strong> is the showroom-layout floor — open-concept, concrete floors, white walls, bay windows, and a display-ready setup that converts cleanly into a fashion-showroom environment with rolling racks and presentation moments. <strong>Floor 2</strong> is the office / lounge-layout floor — a more domestic-feeling room with a built-in bar, banquettes, curated artwork, and breakout corners suited to VIP press, brand-team work space, and BOH. The <strong>rooftop terrace</strong> caps the building with skyline views and an open-air cocktail moment.</p>
+      <p class="body">Capacity comfortably handles the <strong>120-person opening reception</strong> across showroom floor + rooftop (with Floor 2 lounge added in the full-buyout scenario) and the <strong>20-concurrent appointment week</strong> on the showroom floor alone. Tech is in place: iPad-controlled sound, projector capability, freight elevator, COI-ready operator. Daylight throughout the day for the appointment program.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">How COS would use each level</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 12px; font-size: 15px;">
+        <li>· <strong>Floor 1 · Showroom layout</strong> — rolling racks, display moments, fittings stations, anchor of both reception and appointment program</li>
+        <li>· <strong>Floor 2 · Office / lounge layout</strong> — VIP press lounge, brand team workspace, BOH (full buyout only)</li>
+        <li>· <strong>Rooftop terrace</strong> — open-air cocktail moment for the 120-guest reception, content backdrop, decompression space</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- FLOOR 1 — SHOWROOM LAYOUT -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">Floor 1 · Showroom layout</div>
+      <div class="line"></div>
+      <div class="text">Open-concept · clothing-display ready</div>
+    </div>
+    <div class="photo-grid three">
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1o7SyGDZbukawkpn25JMzrDBCv-MxskSz&sz=w1600" alt="Casa Panorama — Floor 1 showroom with industrial columns and bay windows" />
+        <span class="floor-tag">Floor 1</span>
+      </div>
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1KuoY-Moco_kWut2yEDvIvadiTAyovZWF&sz=w1600" alt="Casa Panorama — Floor 1 showroom view" />
+        <span class="floor-tag">Floor 1</span>
+      </div>
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=15YCvnO8B7jkzrbfrTs4Z_rWXIypUfoX1&sz=w1600" alt="Casa Panorama — Floor 1 showroom display area" />
+        <span class="floor-tag">Floor 1</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FLOOR 2 — OFFICE / LOUNGE LAYOUT -->
+  <div style="margin-top: 56px;">
+    <div class="divider-label">
+      <div class="text">Floor 2 · Office / lounge layout</div>
+      <div class="line"></div>
+      <div class="text">Bar · banquettes · curated artwork</div>
+    </div>
+    <div class="photo-grid three">
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1-rD5zL62wNyjjBOCenbvrSPIj9ZFVBJv&sz=w1600" alt="Casa Panorama — Floor 2 lounge with built-in bar and designer seating" />
+        <span class="floor-tag">Floor 2</span>
+      </div>
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1qa0BQ4eOUHosCovdKJ9mXfL2ojhTePk5&sz=w1600" alt="Casa Panorama — Floor 2 central lounge and bar area" />
+        <span class="floor-tag">Floor 2</span>
+      </div>
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1_88zu1jLgI-Vpj3F5V9Wm13W17B5sIR5&sz=w1600" alt="Casa Panorama — Floor 2 lounge area with curated artwork" />
+        <span class="floor-tag">Floor 2</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ROOFTOP -->
+  <div style="margin-top: 56px;">
+    <div class="divider-label">
+      <div class="text">Rooftop · Skyline terrace</div>
+      <div class="line"></div>
+      <div class="text">Open-air cocktail moment</div>
+    </div>
+    <div class="photo-grid two">
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1W6JzMEZJhYu_-J6PtHdMhQTpmdOO708W&sz=w1600" alt="Casa Panorama — rooftop terrace with city views and outdoor seating" />
+        <span class="floor-tag">Rooftop</span>
+      </div>
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1fVSjKj3W69FiuazJjAlSuA5d4zfJHocC&sz=w1600" alt="Casa Panorama — rooftop terrace second view" />
+        <span class="floor-tag">Rooftop</span>
+      </div>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 14px; max-width: 820px;">Click any image to view full-size. <a href="https://youtu.be/xumSa8foJUo" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600;">Walkthrough video on YouTube</a> · the full Casa Panorama listing is at <a href="https://cocoonflexspaces.com/casa-panorama/" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600;">cocoonflexspaces.com/casa-panorama</a>.</p>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <div class="caption" style="margin-bottom: 12px;">Why it works for the COS week</div>
+      <p class="body">Two-floor footprint gives COS the flexibility to run the opening reception across both floors plus the rooftop on Day 1 and then collapse the program onto the main floor for the appointment week — same booking, less staffing pressure. The rooftop is the differentiating moment: a 120-person cocktail hour with the SoHo skyline behind, plus a natural-light moment for content the brand team won't get at the other three venues.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· 7,800 sq ft across two floors + 1,500 sq ft exterior</li>
+        <li>· Rooftop terrace with Manhattan skyline views</li>
+        <li>· Main floor lounge + bar · upper-floor lounge + bar</li>
+        <li>· Freight elevator · street-level entry · ADA-accessible</li>
+        <li>· iPad-controlled sound · projectors · WiFi (Verizon) · TVs</li>
+        <li>· Concrete floors, white walls, designer furniture, curated art</li>
+        <li>· Standing capacity 175–225 · seated dinner 90–120</li>
+        <li>· Hours 6 AM – 12 AM (flexible for productions)</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- A · PRICING — two scenarios -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">A · Pricing</div>
+      <div class="line"></div>
+      <div class="text">All-in · 7 days · two scenarios</div>
+    </div>
+
+    <p class="body" style="max-width: 820px; margin-bottom: 24px;">Two ways to book Casa Panorama for the COS week. The first is the showroom floor with rooftop access for the opening reception — the most efficient fit. The second is the full-building buyout, which adds the second-floor lounge as a private VIP / press room.</p>
+
+    <div class="walk aligned" style="grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px;">
+      <div class="step">
+        <div class="step-num">Scenario 1 · Top floor + rooftop</div>
+        <h4 style="margin-bottom: 14px;">Showroom floor + rooftop terrace</h4>
+        <p class="step-body">Main showroom floor (the lower-level open-concept space designed for clothing display, bar, and reception flow) plus the rooftop terrace. Sufficient footprint for the 120-person opening reception (showroom + rooftop) and the five-day appointment program. Cocoon-negotiated rate is <strong>62% off rack</strong> — the deepest discount in the deck.</p>
+        <div class="step-price">$94,676<span class="sub">All-in · 7 days · top floor + rooftop</span></div>
+      </div>
+      <div class="step" style="border-top-color: var(--teal);">
+        <div class="step-num" style="color: var(--teal);">Scenario 2 · Full buyout</div>
+        <h4 style="margin-bottom: 14px;">Both floors + rooftop · 7,800 sq ft</h4>
+        <p class="step-body">Exclusive use of the entire building — showroom floor, second-floor office/lounge with bar, and rooftop terrace. Gives COS a dedicated VIP and press lounge one floor above the showroom, plus a back-of-house buffer for tailoring and brand team. Comfortable headroom for the reception across all three levels.</p>
+        <div class="step-price" style="color: var(--teal);">$220,000<span class="sub">All-in · 7 days · full buyout</span></div>
+      </div>
+    </div>
+
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 32px; max-width: 820px;">
+      Both figures are all-in. On-site Studio Manager, cleaning service, complimentary site visit, and 2 hours of Cocoon Concierge sourcing are baked into each scenario. Payment by ACH/wire ($25 flat) preferred; card payments incur 3.7% processing. 10% security hold on top, released post-event if no damages/overtime.
+    </p>
+  </div>
+</section>
+
+<!-- ========================================================
+     VENUE B · CASA BRUTAL — WILLIAMSBURG INDUSTRIAL ANCHOR
+     ======================================================== -->
+<section data-lightbox>
+  <div class="option-header">
+    <div class="option-num">B</div>
+    <div>
+      <div class="option-tag">Venue B · Casa Brutal · Williamsburg, Brooklyn · Multi-level art-center</div>
+      <h3 class="option-title">A brutalist art center, used as an architectural anchor.<br/>Ground-floor gallery with outdoor sculpture garden, lower-level screening room, upper-floor gallery.</h3>
+    </div>
+  </div>
+
+  <!-- Hero pair -->
+  <div class="photo-grid editorial" style="margin-top: 32px;">
+    <div class="photo">
+      <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/09/cocoon-casa-brutal-double-staircase-architectural-brutalist-horizontal-1.jpg" alt="Casa Brutal — signature concrete double staircase, brutalist architecture" />
+    </div>
+    <div class="photo">
+      <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/09/cocoon-casa-brutal-exterior-brick-brutalist-facade-1.jpg" alt="Casa Brutal — exterior brick brutalist facade, Williamsburg" />
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A landmarked brutalist art center on the Williamsburg waterfront, operating as a private gallery and event venue — the kind of building that wears a high-end fashion showroom without competing with the collection. Three usable levels: a ground-floor art gallery with white walls and a long bar (the natural anchor for COS's showroom and reception), a lower-level screening room and exhibition space, and an upper-floor gallery with a large window. Plus an outdoor sculpture garden at street level.</p>
+      <p class="body">The brutalist architecture and concrete-and-white-wall palette read as <em>quietly editorial</em> rather than industrial-warehouse — the same vocabulary COS uses in its own retail and lookbook environments. For COS specifically, the alignment is unusually clean. The Williamsburg location is the trade-off to be aware of: it's a 20-minute Uber from SoHo, but the venue itself is the most architecturally distinctive of the four directions and the price is the most efficient.</p>
+    </div>
+    <div>
+      <div class="photo-grid two">
+        <div class="photo">
+          <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/09/cocoon-casa-brutal-first-level-arts-center-gallery-white-walls-1-scaled.jpg" alt="Casa Brutal — ground floor art gallery, white walls, polished floors" />
+        </div>
+        <div class="photo">
+          <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/09/cocoon-casa-brutal-first-level-arts-center-long-bar-1.jpg" alt="Casa Brutal — long bar on ground floor, ideal for the opening reception" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- More rooms -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">B · Across the building</div>
+      <div class="line"></div>
+      <div class="text">Three levels + outdoor sculpture garden</div>
+    </div>
+
+    <div class="photo-grid four">
+      <div class="photo">
+        <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/09/cocoon-casa-brutal-first-level-art-gallery-columns-diagonal-view.jpg" alt="Casa Brutal — ground floor gallery with concrete columns" />
+        <span class="floor-tag">Ground · Gallery</span>
+      </div>
+      <div class="photo">
+        <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/09/cocoon-casa-brutal-lower-level-gallery-white-walls-concrete-floor-1-scaled.jpg" alt="Casa Brutal — lower-level gallery, white walls, concrete floor" />
+        <span class="floor-tag">Lower · Gallery</span>
+      </div>
+      <div class="photo">
+        <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/09/cocoon-casa-brutal-lower-level-screening-room-projection-screen-1.jpg" alt="Casa Brutal — lower-level screening room with projection screen" />
+        <span class="floor-tag">Lower · Screening</span>
+      </div>
+      <div class="photo">
+        <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/09/cocoon-casa-brutal-upper-level-gallery-white-walls-large-window-1-scaled.jpg" alt="Casa Brutal — upper-level gallery with large window" />
+        <span class="floor-tag">Upper · Gallery</span>
+      </div>
+    </div>
+
+    <div class="photo-grid two" style="margin-top: 18px;">
+      <div class="photo">
+        <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/09/cocoon-casa-brutal-street-level-sculpture-garden-conversation-1.jpg" alt="Casa Brutal — outdoor sculpture garden at street level" />
+        <span class="floor-tag">Sculpture garden</span>
+      </div>
+      <div class="photo">
+        <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/09/cocoon-casa-brutal-staircase-architectural-brutalist-1-scaled.jpg" alt="Casa Brutal — architectural brutalist staircase detail" />
+        <span class="floor-tag">Staircase</span>
+      </div>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 14px; max-width: 820px;">Full Casa Brutal listing at <a href="https://cocoonflexspaces.com/casa-brutal/" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600;">cocoonflexspaces.com/casa-brutal</a>. The ground-floor gallery + long bar is the natural reception room; lower-level becomes back-of-house and fitting-room area; upper gallery for VIP press interviews.</p>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <div class="caption" style="margin-bottom: 12px;">Why it works for the COS week</div>
+      <p class="body">The closest aesthetic match for the COS brand of any venue in the deck — concrete, white walls, quiet architectural moments, no decorative noise. The ground-floor gallery flows naturally into a 120-person reception with the long bar already in place; the lower-level screening room gives the fittings program a quiet, sound-attenuated back-of-house with screening for lookbook playback; the outdoor sculpture garden gives a natural-light cocktail moment without leaving the building. And it's the most efficient pricing in the deck — meaningfully under the $75K target.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· Three-level brutalist art center · landmarked building</li>
+        <li>· Ground floor: white-walled gallery + long bar</li>
+        <li>· Lower level: screening room with projection · second gallery</li>
+        <li>· Upper level: gallery with large window</li>
+        <li>· Outdoor sculpture garden at street level</li>
+        <li>· Architectural concrete staircase · brick exterior</li>
+        <li>· Ramp access · ADA-friendly entry</li>
+        <li>· Williamsburg location · 20-min Uber from SoHo</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- B · PRICING -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">B · Pricing</div>
+      <div class="line"></div>
+      <div class="text">All-in · 7 days · 30% off rack</div>
+    </div>
+
+    <div class="breakdown">
+      <table>
+        <tbody>
+          <tr>
+            <td><strong>Ground floor + outdoor area</strong><div class="caption" style="margin-top:4px;">Sept 8–14 · 12 hrs/day · exclusive use of the white-walled gallery, long bar, and sculpture garden</div></td>
+            <td class="amount" style="vertical-align: middle;">All-in</td>
+          </tr>
+          <tr class="subtle">
+            <td>Rack rate before discount</td>
+            <td class="amount">$123,120</td>
+          </tr>
+          <tr class="subtle">
+            <td>Cocoon-negotiated discount applied <strong style="color: var(--terracotta);">−30%</strong></td>
+            <td class="amount">−$36,930</td>
+          </tr>
+          <tr class="total">
+            <td><span class="label">All-in total · Venue B</span>Casa Brutal · ground floor + outdoor · 7 days</td>
+            <td class="amount">$86,190</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 16px; max-width: 820px;">
+      All-in figure includes on-site Studio Manager for the duration of the booking, daily cleaning, and 2 hours of Cocoon Concierge sourcing — no line-item add-ons. Lower-level (screening room + second gallery) and upper-level gallery available as add-ons; pricing on request, scaled to the floors selected. Payment by ACH/wire ($25 flat) preferred; card payments incur 3.7% processing. 10% security hold on top, released post-event if no damages/overtime.
+    </p>
+  </div>
+</section>
+
+<!-- ========================================================
+     VENUE C · CASA LUZ — SOHO LOFT, 45 HOWARD
+     ======================================================== -->
+<section data-lightbox>
+  <div class="option-header">
+    <div class="option-num">C</div>
+    <div>
+      <div class="option-tag">Venue C · Casa Luz · SoHo, Manhattan · 45 Howard Street · two floors</div>
+      <h3 class="option-title">A two-floor SoHo loft on Howard Street.<br/>15-ft ceilings, cast-iron columns, exposed brick, oversized windows, passenger elevator.</h3>
+    </div>
+  </div>
+
+  <!-- Hero pair — Lower floor + Facade -->
+  <div class="photo-grid editorial" style="margin-top: 32px;">
+    <div class="photo">
+      <img src="https://drive.google.com/thumbnail?id=1sM8-EoIaPgl4PGYzXVInzWqigv8vQslr&sz=w1600" alt="Casa Luz — Lower-floor loft, 15-foot ceilings, exposed brick, daylight from oversized windows" />
+      <span class="floor-tag">Lower floor · Showroom</span>
+    </div>
+    <div class="photo">
+      <img src="https://drive.google.com/thumbnail?id=1Gv5RFV7ICViuqVIAjMmNZ_rvc0Ws5--X&sz=w1600" alt="Casa Luz — 45 Howard Street facade, SoHo cast-iron exterior" />
+      <span class="floor-tag">Facade</span>
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">Two floors at 45 Howard Street — the SoHo / Tribeca corridor most of COS's clients already keep in their NYFW rotation. The architecture is classic SoHo: 15-foot ceilings, original cast-iron columns, exposed brick walls, oversized windows on multiple exposures, polished hardwood floors. Available as a <strong>lower-floor-only booking</strong> (the principal 3,500 sq ft showroom anchor) or as a <strong>both-floors booking</strong> that adds the upper level as a private VIP lounge, press room, or brand-team workspace.</p>
+      <p class="body">Open-concept floorplan on each level — converts cleanly between a 120-person reception footprint and an appointment-led showroom. Rolling display stations along the brick walls, fittings and clienteling corners near the windows, and (in the both-floors scenario) a permanent BOH and press separation one floor up. ADA-compliant, passenger elevator access, daylight-rich. Hold status: <strong>second hold confirmed pending first-hold release</strong> — we'll know within the week whether it firms.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">How COS would use each level</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 12px; font-size: 15px;">
+        <li>· <strong>Lower floor · Showroom anchor</strong> — 3,500 sq ft principal floor. Reception, rolling racks, display moments, appointment-week footprint</li>
+        <li>· <strong>Upper floor · VIP lounge / BOH</strong> — additional architecturally-matched floor. VIP press, brand team workspace, fittings overflow (both-floors scenario)</li>
+        <li>· <strong>Facade · SoHo address</strong> — 45 Howard Street, cast-iron exterior, arrival on the most familiar fashion-week corridor</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- LOWER FLOOR -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">Lower floor · Showroom anchor</div>
+      <div class="line"></div>
+      <div class="text">3,500 sq ft · 15-ft ceilings · oversized windows</div>
+    </div>
+    <div class="photo-grid three">
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1lGBBJYbUiD7ejSGVXZ1LlbvkMW-LdfQh&sz=w1600" alt="Casa Luz — Lower floor with exposed brick wall and large windows" />
+        <span class="floor-tag">Lower floor</span>
+      </div>
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1W-ToX7uu7crYajVttmULJXT0GnUsdQr8&sz=w1600" alt="Casa Luz — Lower floor open layout, hardwood, brick" />
+        <span class="floor-tag">Lower floor</span>
+      </div>
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1m_6_b8rB0YNGi2T7Qmu5MgEY7iziF5s2&sz=w1600" alt="Casa Luz — Lower floor cast-iron column detail and exposed brick" />
+        <span class="floor-tag">Lower floor</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- UPPER FLOOR -->
+  <div style="margin-top: 56px;">
+    <div class="divider-label">
+      <div class="text">Upper floor · VIP lounge / additional space</div>
+      <div class="line"></div>
+      <div class="text">Architecturally matched · permanent BOH option</div>
+    </div>
+    <div class="photo-grid three">
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1qtLJcFpH8rEN2ah2D6m3GNAOUeb16181&sz=w1600" alt="Casa Luz — Upper floor with column and natural light" />
+        <span class="floor-tag">Upper floor</span>
+      </div>
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1xSzQW6DfHTX0epHkVeT52G1eF7PuwwNL&sz=w1600" alt="Casa Luz — Upper floor daylight-filled corner" />
+        <span class="floor-tag">Upper floor</span>
+      </div>
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1ImJjY2jmrI3AijiYHRbIgXLQFBlJIFok&sz=w1600" alt="Casa Luz — Upper floor secondary view" />
+        <span class="floor-tag">Upper floor</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- FACADE -->
+  <div style="margin-top: 56px;">
+    <div class="divider-label">
+      <div class="text">Facade · 45 Howard Street</div>
+      <div class="line"></div>
+      <div class="text">SoHo cast-iron exterior · arrival sequence</div>
+    </div>
+    <div class="photo-grid two">
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1zfLPSMNGo0p2RdCfBS2llBff_goRM22C&sz=w1600" alt="Casa Luz — 45 Howard Street facade and arrival" />
+        <span class="floor-tag">Facade</span>
+      </div>
+      <div class="photo">
+        <img src="https://drive.google.com/thumbnail?id=1UQb-ORvm86RAvJ5qTO3xnqHjfZhVAnR6&sz=w1600" alt="Casa Luz — exterior detail, SoHo cast iron" />
+        <span class="floor-tag">Facade</span>
+      </div>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 14px; max-width: 820px;">Click any image to view full-size. Full Casa Luz listing at <a href="https://cocoonflexspaces.com/casa-luz/" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600;">cocoonflexspaces.com/casa-luz</a>.</p>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <div class="caption" style="margin-bottom: 12px;">Why it works for the COS week</div>
+      <p class="body">The most quintessentially-SoHo of the four directions, and the address with the most familiar rhythm for COS's NYFW clients. The architecture (15-ft ceilings, cast iron, brick) is the same vocabulary as COS's flagship retail environments — the collection will read in this space without any styling intervention. Floorplan is open enough for a 120-person reception to flow comfortably across the floor on Day 1 and then collapse into smaller appointment moments along the windows for the fittings week.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· Two-floor option · 3,500 sq ft principal showroom floor</li>
+        <li>· 15-foot ceilings · exposed brick · cast-iron columns</li>
+        <li>· Oversized windows · multiple exposures · daylight-rich</li>
+        <li>· Open-concept · polished hardwood floors</li>
+        <li>· Passenger elevator · ADA-compliant entry</li>
+        <li>· Upper floor available as VIP lounge / BOH</li>
+        <li>· 45 Howard Street · SoHo / Tribeca · steps from Canal St</li>
+        <li>· Hold status: <strong>2nd hold pending</strong></li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- C · PRICING — two scenarios -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">C · Pricing</div>
+      <div class="line"></div>
+      <div class="text">All-in · 7 days · two scenarios</div>
+    </div>
+
+    <p class="body" style="max-width: 820px; margin-bottom: 24px;">Two ways to book Casa Luz for the COS week. <strong>Lower floor only</strong> is the most efficient fit for a single-floor showroom — Cocoon has negotiated a 40% discount off rack. <strong>Both floors</strong> gives COS a permanently separated showroom-and-VIP-lounge footprint across the lower and upper levels, at standard rate.</p>
+
+    <div class="walk aligned" style="grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px;">
+      <div class="step">
+        <div class="step-num">Scenario 1 · Lower floor only</div>
+        <h4 style="margin-bottom: 14px;">Lower-floor loft · 40% off rack</h4>
+        <p class="step-body">Exclusive use of the 3,500 sq ft lower-floor loft — the principal showroom space. 15-ft ceilings, cast-iron columns, exposed brick, oversized windows. Comfortable footprint for the 120-person opening reception and the five-day appointment program on a single floor. Cocoon-negotiated <strong>40% discount</strong> off the venue's rack rate.</p>
+        <div class="step-price">$97,236<span class="sub">All-in · 7 days · lower floor · 40% off rack</span></div>
+      </div>
+      <div class="step" style="border-top-color: var(--teal);">
+        <div class="step-num" style="color: var(--teal);">Scenario 2 · Both floors</div>
+        <h4 style="margin-bottom: 14px;">Lower + upper floor · standard rate</h4>
+        <p class="step-body">Exclusive use of both floors of the building — the lower-floor showroom plus the upper-floor loft, available as a private VIP lounge, press room, or brand-team workspace. Two distinct architecturally-matched rooms with permanent separation between reception/fittings and back-of-house. Quoted at the venue's standard rate (no further discount applied).</p>
+        <div class="step-price" style="color: var(--teal);">$156,540<span class="sub">All-in · 7 days · both floors</span></div>
+      </div>
+    </div>
+
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 32px; max-width: 820px;">
+      Both figures are all-in. On-site Studio Manager for the duration of each day's booking, daily cleaning, and 2 hours of Cocoon Concierge sourcing baked into each scenario. Subject to the first-hold client releasing the dates — we'll know within the week. Payment by ACH/wire ($25 flat) preferred; card payments incur 3.7% processing. 10% security hold on top.
+    </p>
+  </div>
+</section>
+
+<!-- ========================================================
+     VENUE D · CASA ARBUS — WEST SOHO STUDIO FLOOR
+     ======================================================== -->
+<section data-lightbox>
+  <div class="option-header">
+    <div class="option-num">D</div>
+    <div>
+      <div class="option-tag">Venue D · Casa Arbus · West SoHo, Manhattan · Four-studio creative floor</div>
+      <h3 class="option-title">A four-studio creative floor in West SoHo.<br/>Four interconnected studios with kitchenettes, columns, oversized windows, freight elevator.</h3>
+    </div>
+  </div>
+
+  <!-- Hero pair -->
+  <div class="photo-grid editorial" style="margin-top: 32px;">
+    <div class="photo">
+      <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/02/cocoon-casa-arbus-Studio-A-open-layout-large-windows-two-walls-1.jpg" alt="Casa Arbus — Studio A, open layout with large windows on two walls" />
+    </div>
+    <div class="photo">
+      <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/01/cocoon-casa-arbus-Studio-A-open-layout-large-windows-1.jpg" alt="Casa Arbus — Studio A, open layout with industrial columns" />
+    </div>
+  </div>
+
+  <div class="two-col" style="margin-top: 48px;">
+    <div>
+      <p class="body">A full creative floor on a West SoHo office building, configured as four interconnected studios (A, B, C, D) with two kitchenettes and a freight elevator. The building's bones are pure-play SoHo loft: industrial columns, white walls, polished concrete and hardwood floors, oversized windows on every exposure. Each studio reads as its own room — Studio A as the largest open footprint for the reception and main display, Studio B/C/D as quieter rooms for fittings, press interviews, and back-of-house.</p>
+      <p class="body">Of the four directions, Casa Arbus is the budget-friendliest — the only venue in the deck that lands clearly inside COS's $75K target without further negotiation. The building is configured as four interconnected studios, so we can scale the booking up or down by the number of studios held each day: <strong>Format 1</strong> uses two studios on the reception day and a single studio for the appointment week (the most budget-efficient shape); <strong>Format 2</strong> holds two studios across all seven days for more permanent room separation. Both formats below.</p>
+    </div>
+    <div>
+      <div class="photo-grid two">
+        <div class="photo">
+          <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/01/cocoon-casa-arbus-Studio-A-kitchenette-light-on.jpg" alt="Casa Arbus — Studio A kitchenette with Miele ovens" />
+        </div>
+        <div class="photo">
+          <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/01/cocoon-casa-arbus-Studio-D-large-windows-two-columns-front-view.jpg" alt="Casa Arbus — Studio D with two columns and large windows" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- More rooms -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">D · Across the floor</div>
+      <div class="line"></div>
+      <div class="text">Four studios · A · B · C · D</div>
+    </div>
+
+    <div class="photo-grid four">
+      <div class="photo">
+        <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/01/cocoon-casa-arbus-Studio-A-open-layout-large-desk-two-columns.jpg" alt="Casa Arbus — Studio A, open layout with two columns" />
+        <span class="floor-tag">Studio A</span>
+      </div>
+      <div class="photo">
+        <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/01/cocoon-casa-arbus-Studio-B-two-large-windows-1.jpg" alt="Casa Arbus — Studio B with two large windows" />
+        <span class="floor-tag">Studio B</span>
+      </div>
+      <div class="photo">
+        <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/01/cocoon-casa-arbus-Studio-C-large-windows-open-office-diagonal-view.jpg" alt="Casa Arbus — Studio C with large windows and open office layout" />
+        <span class="floor-tag">Studio C</span>
+      </div>
+      <div class="photo">
+        <img src="https://cocoonflexspaces.com/wp-content/uploads/2025/01/cocoon-casa-arbus-Studio-D-large-windows-two-columns-diagonal-view.jpg" alt="Casa Arbus — Studio D with large windows and two columns" />
+        <span class="floor-tag">Studio D</span>
+      </div>
+    </div>
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 14px; max-width: 820px;">Full Casa Arbus listing at <a href="https://cocoonflexspaces.com/casa-arbus/" target="_blank" rel="noopener" style="color: var(--terracotta); font-weight: 600;">cocoonflexspaces.com/casa-arbus</a>. The four studios can be configured independently or as a single connected footprint — useful for separating reception, fittings, press interviews, and BOH cleanly.</p>
+  </div>
+
+  <div class="two-col" style="margin-top: 56px;">
+    <div>
+      <div class="caption" style="margin-bottom: 12px;">Why it works for the COS week</div>
+      <p class="body">Two pragmatic advantages: <strong>price headroom</strong> (the option that most clearly fits inside the $75K target, with room left over for catering and content) and <strong>room separation</strong> (four interconnected studios let COS run reception, fittings, press interviews, and BOH as four separate moments without anyone treading on each other's space). The trade-off vs Casa Luz / Panorama: less of a single-headline "money shot" — the architecture is more workmanlike SoHo studio than landmark loft. The trade-off vs Casa Brutal: in Manhattan, but quieter and less editorially-distinctive.</p>
+    </div>
+    <div>
+      <div class="caption" style="margin-bottom: 12px; color: var(--terracotta);">Notable features</div>
+      <ul style="padding: 0; list-style: none; margin: 0; display: grid; gap: 10px; font-size: 15px;">
+        <li>· Four interconnected studios (A, B, C, D)</li>
+        <li>· Two kitchenettes with Miele ovens · prep + service-ready</li>
+        <li>· Industrial columns · oversized windows · white walls</li>
+        <li>· Freight elevator on floor 9</li>
+        <li>· Polished concrete / hardwood floors</li>
+        <li>· West SoHo address · quieter end of the corridor</li>
+        <li>· Most budget-efficient of the four directions</li>
+        <li>· Hold status: <strong>available</strong> · two pricing formats</li>
+      </ul>
+    </div>
+  </div>
+
+  <!-- D · PRICING — two formats -->
+  <div style="margin-top: 64px;">
+    <div class="divider-label">
+      <div class="text">D · Pricing</div>
+      <div class="line"></div>
+      <div class="text">All-in · 7 days · two formats</div>
+    </div>
+
+    <p class="body" style="max-width: 820px; margin-bottom: 24px;">Two ways to shape the Casa Arbus booking. Format 1 is the most budget-efficient — a generous opening reception across two adjacent studios on Day 1, then a single studio for the appointment week. Format 2 keeps both studios held across all seven days for permanent reception / fitting separation.</p>
+
+    <div class="walk aligned" style="grid-template-columns: 1fr 1fr; gap: 24px; margin-top: 16px;">
+      <div class="step" style="border-top-color: var(--teal);">
+        <div class="step-num" style="color: var(--teal);">Format 1 · Most efficient</div>
+        <h4 style="margin-bottom: 14px;">Two studios on Day 1 · one studio Days 2–7</h4>
+        <p class="step-body">Two adjacent studios held on the opening reception day (Sept 8) — comfortably handles the 120-guest cocktail flow across both rooms. Then a single studio held across the five live appointment days plus wrap (Sept 9–14), which is sized correctly for the 20-concurrent fittings program. Cleanly the lowest cost of any direction in the deck — $17K under the $75K target.</p>
+        <div class="step-price" style="color: var(--teal);">$57,940<span class="sub">All-in · 7 days · 2 studios D1 + 1 studio D2–7</span></div>
+      </div>
+      <div class="step">
+        <div class="step-num">Format 2 · Two studios all week</div>
+        <h4 style="margin-bottom: 14px;">Two studios held across all 7 days</h4>
+        <p class="step-body">Two adjacent studios held continuously across the full window. Gives COS a permanently separated reception/showroom room and a private fittings / BOH room without any daily reconfiguration. More room than strictly required for the typical appointment day, but the operational simplicity is the trade-off — and even at $85,960 all-in this is materially under the next-cheapest direction.</p>
+        <div class="step-price">$85,960<span class="sub">All-in · 7 days · 2 studios continuously</span></div>
+      </div>
+    </div>
+
+    <p class="body" style="font-size: 13px; color: var(--ink-soft); margin-top: 32px; max-width: 820px;">
+      Both figures are all-in — on-site Studio Manager for the duration of each day's booking, daily cleaning, and 2 hours of Cocoon Concierge sourcing baked in. Payment by ACH/wire ($25 flat) preferred; card payments incur 3.7% processing. 10% security hold on top, released post-event if no damages/overtime.
+    </p>
+  </div>
+</section>
+
+<!-- =================== AT A GLANCE COMPARISON =================== -->
+<section class="full" style="background: var(--cream-deep);">
+  <div class="inner">
+    <div class="superhead">At a glance</div>
+    <h2 class="title" style="font-size: clamp(34px, 4.5vw, 56px); margin-top: 18px; max-width: 980px;">Four venues. One seven-day window. Same opening reception + showroom program.</h2>
+    <p class="lede" style="margin-top: 18px; max-width: 820px; color: var(--ink-soft);">All figures are all-in, no commission, no markup — direct from the property with Cocoon-negotiated discounts already applied. Budget reference point: COS target of $75,000.</p>
+  </div>
+  <div class="inner">
+    <div class="caption" style="margin-top: 48px; margin-bottom: 18px;">Four directions · seven-day all-in</div>
+    <div class="walk aligned four">
+      <div class="step">
+        <div class="step-num">Venue A</div>
+        <h4>Casa Panorama · SoHo, 7,800 sq ft</h4>
+        <p class="step-body">Two floors + rooftop. Top floor + rooftop is the efficient fit; full buyout adds the second-floor lounge as a VIP / press room. Highest discount (62%).</p>
+        <div class="step-price">$94,676<span class="sub">Top floor + rooftop &nbsp;·&nbsp; or $220,000 full buyout</span></div>
+      </div>
+      <div class="step">
+        <div class="step-num">Venue B</div>
+        <h4>Casa Brutal · Williamsburg, multi-level</h4>
+        <p class="step-body">Brutalist art center. Closest aesthetic to COS. Ground-floor gallery + long bar + outdoor garden. Trade-off: 20-min Uber from SoHo.</p>
+        <div class="step-price">$86,190<span class="sub">All-in · ground floor + outdoor · 7 days</span></div>
+      </div>
+      <div class="step">
+        <div class="step-num">Venue C</div>
+        <h4>Casa Luz · SoHo loft, 45 Howard</h4>
+        <p class="step-body">Two-floor option. Lower floor only (40% off rack) is the efficient fit; both floors at standard rate adds an upper-level VIP / press room. Hold status: 2nd hold pending.</p>
+        <div class="step-price">$97,236<span class="sub">Lower floor &nbsp;·&nbsp; or $156,540 both floors</span></div>
+      </div>
+      <div class="step" style="border-top-color: var(--teal);">
+        <div class="step-num" style="color: var(--teal);">Venue D</div>
+        <h4>Casa Arbus · West SoHo, four studios</h4>
+        <p class="step-body">Two formats. Format 1 (2 studios D1 + 1 studio D2–7) is the most budget-efficient direction in the deck. Format 2 keeps 2 studios all week.</p>
+        <div class="step-price" style="color: var(--teal);">$57,940<span class="sub">Format 1 &nbsp;·&nbsp; or $85,960 (Format 2)</span></div>
+      </div>
+    </div>
+
+    <div class="note body" style="background: #FFF; border-left-color: var(--terracotta); margin-top: 40px; padding: 28px 36px;">
+      <p style="margin: 0 0 12px;"><strong>On the budget gap.</strong> Casa Arbus (both formats) and Casa Brutal already sit inside COS's $75K target after Cocoon-negotiated discounts. Casa Panorama (top floor + rooftop) and Casa Luz sit modestly above; if COS wants to land either of those inside the envelope, three pragmatic levers are available:</p>
+      <p style="margin: 0 0 16px;">— <strong>Tighten operational hours</strong> from 14 hrs/day to 12 (saves ~10–15%) · <strong>Reduce cleaning</strong> from daily to every-other-day (saves ~$1,200) · <strong>Or further negotiated discount</strong> if COS commits to lock the dates this week. We can model any of those against a specific direction once Sofia flags the preferred venue.</p>
+      <p style="margin: 0; padding-top: 16px; border-top: 1px solid var(--rule);"><strong style="color: var(--teal);">And if budget is flexible</strong> — beyond these four Cocoon-exclusive venues, we can also bring forward additional options from our <strong>extended Discovery Portfolio Network</strong>: a curated set of landmarked Manhattan mansions, gallery houses, and private residences not in the public rotation. Useful if COS wants to consider a more institutional or editorial address for the run. Tell us and we'll surface a separate shortlist.</p>
+    </div>
+  </div>
+</section>
+
+<!-- =================== SERVICES NOTE (TEAL CALLOUT) =================== -->
+<section class="full">
+  <div class="callout teal">
+    <div class="inner">
+      <div class="superhead" style="color: rgba(255,255,255,0.9);">Beyond the venue</div>
+      <h2 class="title" style="color: #FFF; margin-top: 18px; max-width: 1100px; font-size: clamp(30px, 4vw, 52px);">Catering, photography, videography, security, florals, DJs, bartenders — we can layer any of these in once a venue is locked.</h2>
+      <p class="lede" style="margin-top: 24px; max-width: 760px;">The numbers in this deck are the venue figures, clean. When COS is ready, the Cocoon Concierge can bring forward shortlists for the service layers most useful for the week — drawn from the caterers, photographers, security firms, and production partners we work with regularly on NYFW activations at this level. <strong>Two hours of concierge sourcing are complimentary</strong> with every booking; additional hours billed at $75/hr.</p>
+
+      <div class="walk" style="margin-top: 48px;">
+        <div class="step" style="border-top-color: rgba(255,255,255,0.5);">
+          <div class="step-num" style="color: #FFF;">Reception services</div>
+          <h4 style="color: #FFF;">Catering · Bartender · DJ · Florals</h4>
+          <p style="color: rgba(255,255,255,0.85);">Caterer shortlist for the 120-person opening reception (passed canapés + bar program). Bartender + bar setup. DJ + ambient program. Floral design.</p>
+        </div>
+        <div class="step" style="border-top-color: rgba(255,255,255,0.5);">
+          <div class="step-num" style="color: #FFF;">Content + press</div>
+          <h4 style="color: #FFF;">Photography · Videography · BTS</h4>
+          <p style="color: rgba(255,255,255,0.85);">Editorial / brand-event photographer for the opening reception and a daily flow shot through the appointment week. Videography for any celebrity interview moments.</p>
+        </div>
+        <div class="step" style="border-top-color: rgba(255,255,255,0.5);">
+          <div class="step-num" style="color: #FFF;">Operations</div>
+          <h4 style="color: #FFF;">Security · Front-of-house · Floor staff</h4>
+          <p style="color: rgba(255,255,255,0.85);">Security for the reception evening + key VIP moments. Front-of-house greeters. Additional floor staff to layer with the COS team for the fittings week.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- =================== NEXT STEPS =================== -->
+<section class="full">
+  <div class="callout" style="background: var(--ink); color: var(--cream);">
+    <div class="inner">
+      <div class="superhead" style="color: var(--terracotta);">What we need from you</div>
+      <h2 class="title" style="color: var(--cream); margin-top: 18px; max-width: 980px;">Three short answers and we can hold the right venue.</h2>
+    </div>
+    <div class="inner" style="margin-top: 48px;">
+      <div class="walk">
+        <div class="step" style="border-top-color: var(--terracotta);">
+          <div class="step-num" style="color: var(--terracotta);">01</div>
+          <h4 style="color: var(--cream);">Venue direction</h4>
+          <p style="color: rgba(245,242,232,0.78);">Which of the four. We can hold all four for ~72 hours informally; only Casa Luz has any external pressure (2nd hold pending). Casa Panorama still has a floor-configuration question to settle (main floor only vs full buyout).</p>
+        </div>
+        <div class="step" style="border-top-color: var(--terracotta);">
+          <div class="step-num" style="color: var(--terracotta);">02</div>
+          <h4 style="color: var(--cream);">Budget calibration</h4>
+          <p style="color: rgba(245,242,232,0.78);">If COS wants to land inside the $75K envelope, flag which lever to pull: tighter operational hours, reduced cleaning cadence, or further negotiated discount. We'll model the specific number against the preferred venue within 24 hours.</p>
+        </div>
+        <div class="step" style="border-top-color: var(--terracotta);">
+          <div class="step-num" style="color: var(--terracotta);">03</div>
+          <h4 style="color: var(--cream);">Site visit</h4>
+          <p style="color: rgba(245,242,232,0.78);">30 minutes on-site at one (or two) of the directions, this week. Casa Brutal Tue / Wed are open; Casa Panorama and Casa Luz are flexible with 24 hours notice; Casa Arbus the same. Tell us the venue and we'll lock the slot.</p>
+        </div>
+      </div>
+    </div>
+    <div class="inner" style="margin-top: 56px; display: flex; gap: 16px; flex-wrap: wrap;">
+      <a href="mailto:sofia@thegathery.com?cc=andres@cocoonflexspaces.com&amp;subject=COS NYFW Showroom — September 8–14 · venue direction" class="cta-pill terracotta">Reply to Andrés →</a>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="inner">
+    <div>
+      <div class="sig">Andrés Tovar · Cocoon Flex Spaces</div>
+      <div class="meta" style="margin-top: 6px;">andres@cocoonflexspaces.com · cocoonflexspaces.com</div>
+    </div>
+    <div class="meta" style="text-align: right;">
+      <div style="display: inline-flex; align-items: center; gap: 8px; justify-content: flex-end;">
+        <span>Prepared for Sofia Sarubbi · The Gathery&nbsp;·&nbsp;</span>
+        <img src="img/cos/cos-wordmark.svg" alt="COS" style="height: 11px; width: auto; display: block;" />
+      </div>
+      <div style="margin-top: 4px;">September 8–14, 2026 · New York · By appointment</div>
+    </div>
+  </div>
+</footer>
+
+<!-- LIGHTBOX -->
+<script>
+(function () {
+  const targets = document.querySelectorAll('section[data-lightbox] .photo img');
+  if (!targets.length) return;
+
+  const lb = document.createElement('div');
+  lb.className = 'lightbox';
+  lb.setAttribute('aria-hidden', 'true');
+  lb.innerHTML =
+    '<button type="button" class="lightbox-close" aria-label="Close (Esc)">×</button>' +
+    '<img src="" alt="" />' +
+    '<div class="lightbox-caption">Click anywhere or press Esc to close</div>';
+  document.body.appendChild(lb);
+
+  const lbImg = lb.querySelector('img');
+  const closeBtn = lb.querySelector('.lightbox-close');
+
+  function open(src, alt) {
+    lbImg.src = src;
+    lbImg.alt = alt || '';
+    lb.classList.add('open');
+    lb.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+  function close() {
+    lb.classList.remove('open');
+    lb.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    setTimeout(function () { lbImg.src = ''; lbImg.alt = ''; }, 250);
+  }
+
+  targets.forEach(function (img) {
+    img.style.cursor = 'zoom-in';
+    img.parentElement.addEventListener('click', function () {
+      open(img.currentSrc || img.src, img.alt);
+    });
+  });
+
+  lb.addEventListener('click', function (e) {
+    if (e.target === lb || e.target === lbImg) close();
+  });
+  closeBtn.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && lb.classList.contains('open')) close();
+  });
+})();
+</script>
+
+</body>
+</html>
