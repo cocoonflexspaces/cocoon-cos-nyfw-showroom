@@ -45,7 +45,7 @@ swap_drive 1W6JzMEZJhYu_-J6PtHdMhQTpmdOO708W img/panorama/rooftop/02.jpg
 swap_drive 1fVSjKj3W69FiuazJjAlSuA5d4zfJHocC img/panorama/rooftop/03.jpg
 
 # Casa Luz
-swap_drive 1frhhOFPhQiip19_fmeSTbZt_sAfFmhuI img/luz/lower/00-cover-hero.jpg
+sed_inplace "s|https://cocoonflexspaces.com/wp-content/uploads/2026/04/45Howard_42741-scaled.jpg|img/luz/lower/00-cover-hero.jpg|g" index.html
 swap_drive 1sM8-EoIaPgl4PGYzXVInzWqigv8vQslr img/luz/lower/01-hero.jpg
 swap_drive 1lGBBJYbUiD7ejSGVXZ1LlbvkMW-LdfQh img/luz/lower/02.jpg
 swap_drive 1W-ToX7uu7crYajVttmULJXT0GnUsdQr8 img/luz/lower/03.jpg

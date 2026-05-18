@@ -90,8 +90,9 @@ echo ""
 echo "──────────────────────────────────────────"
 echo "  Casa Luz · Drive"
 echo "──────────────────────────────────────────"
-# Cover hero (also used as deck cover)
-gdrive 1frhhOFPhQiip19_fmeSTbZt_sAfFmhuI img/luz/lower/00-cover-hero.jpg
+# Cover hero — sourced from the cocoonflexspaces.com Casa Luz listing (kept for image strength)
+warm "casa-luz"
+dl "https://cocoonflexspaces.com/wp-content/uploads/2026/04/45Howard_42741-scaled.jpg" "img/luz/lower/00-cover-hero.jpg" "https://cocoonflexspaces.com/casa-luz/"
 # Lower Floor
 gdrive 1sM8-EoIaPgl4PGYzXVInzWqigv8vQslr img/luz/lower/01-hero.jpg
 gdrive 1lGBBJYbUiD7ejSGVXZ1LlbvkMW-LdfQh img/luz/lower/02.jpg
